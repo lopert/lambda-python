@@ -1,1 +1,5 @@
+"active" the virtual env, meaning commands run in the terminal will be run within that env. (I assume this is what this does lol).
 source venv/bin/activate
+
+How to get out of the activate
+"deactivate"
