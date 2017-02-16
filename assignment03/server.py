@@ -46,8 +46,7 @@ def favorite():
 
     try:
         cursor.execute('SELECT * FROM foods WHERE name = "shwarma"')
-        print("Got the Shwarma!")
-        message = json.dumps(cursor.fetchall()[0][0])
+        message = json.dumps(cursor.fetchall())
     except:
         db_connect.rollback()
         message = 'Error in fav operation'
